@@ -1,9 +1,14 @@
-import Image from "next/image";
+"use client";
+import HomeConverter from "./pages/homeconverter";
+import Header from "./layouts/header";
+import Footer from "./layouts/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p>currencyconverter-project</p>
-    </main>
+    <>
+      <Header />
+      <HomeConverter />
+      <Footer/>
+    </>
   );
 }
