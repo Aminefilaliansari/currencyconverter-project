@@ -17,7 +17,6 @@
 }
 
 body {
-
 }
 
 @layer utilities {
@@ -26,6 +25,18 @@ body {
   }
 }
 
-:where(.css-dev-only-do-not-override-1b0bdye).ant-input-number-lg input.ant-input-number-input {
+:where(.css-dev-only-do-not-override-1b0bdye).ant-input-number-lg
+  input.ant-input-number-input {
   height: 48px !important;
+}
+
+#DemoTabs .ant-tabs-nav-list {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#DemoTabs .ant-tabs-tab {
+  width: 100%;
+  justify-content: center;
+  height: 3.5rem;
 }
