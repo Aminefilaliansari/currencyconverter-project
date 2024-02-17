@@ -9,12 +9,12 @@ const HomeConverter = () => {
       <main className="flex flex-col items-center p-12">
         <div className="container">
           <div id="Title" className="my-12 text-slate-100 text-center">
-            <h2 className="text-3xl font-semibold">
+            <h1 className="text-3xl font-semibold">
               Currency Converter Project
-            </h2>
+            </h1>
             <p className="text-slate-100">In developement by Dev Amine </p>
           </div>
-          <DemoTabs/>
+          <DemoTabs />
           <DemoTable />
         </div>
       </main>

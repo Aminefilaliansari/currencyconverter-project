@@ -65,7 +65,10 @@ const data = [
 
 export default function DemoTable() {
   return (
-    <div id="DemoTab" className="my-12 w-full">
+    <div id="DemoTab" className=" my-28 w-full">
+      <h2 className=" text-center font-semibold text-xl my-8 text-blue-900">
+        Taux de change en direct
+      </h2>
       <Table
         columns={columns}
         dataSource={data}
