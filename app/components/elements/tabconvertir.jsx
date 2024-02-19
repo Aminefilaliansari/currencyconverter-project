@@ -33,6 +33,7 @@ export default function TabConvertir() {
             <Select
               defaultValue="USD"
               className="w-full h-12"
+              showSearch
               options={[
                 {
                   value: "USD",
@@ -69,6 +70,7 @@ export default function TabConvertir() {
             <Select
               defaultValue="EURO"
               className="w-full h-12"
+              showSearch
               options={[
                 {
                   value: "USD",
