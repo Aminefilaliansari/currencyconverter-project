@@ -1,7 +1,8 @@
-import DemoChart from "./demochart";
 import { SendOutlined, CaretDownFilled } from "@ant-design/icons";
 import { Table, Button, Switch } from "antd";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+const DemoChart = dynamic(() => import("./DemoChart"), { ssr: false });
 
 const columns = [
   {
@@ -48,7 +49,7 @@ const columns = [
       if (index === 0) {
         return null;
       }
-      return text;
+      return <DemoChart color={record.color} id={record.key} />;
     },
   },
   {
