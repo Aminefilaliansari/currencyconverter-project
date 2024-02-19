@@ -1,18 +1,27 @@
 import { Tabs, Skeleton } from "antd";
-import Convertir from "./elements/convertir";
+import TabConvertir from "./elements/tabconvertir";
 import {
   DollarOutlined,
   LineChartOutlined,
   SendOutlined,
   BellOutlined,
 } from "@ant-design/icons";
+import { motion } from "framer-motion";
 
 const items = [
   {
     key: "1",
     label: "Convertir",
     icon: <DollarOutlined />,
-    children: <Convertir />,
+    children: (
+      <motion.div
+        initial={{ opacity: 0, height: 100 }}
+        whileInView={{ opacity: 1, height: "auto" }}
+        transition={{ duration: 0.7 }}
+      >
+        <TabConvertir />
+      </motion.div>
+    ),
   },
   {
     key: "2",
