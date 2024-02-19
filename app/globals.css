@@ -16,9 +16,6 @@
   }
 }
 
-body {
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -39,4 +36,13 @@ body {
   width: 100%;
   justify-content: center;
   height: 3.5rem;
+}
+
+.selected-row {
+  background-color: #a257f7;
+  color: aliceblue;
+}
+
+.ant-table-cell-row-hover {
+  background-color: #88c3eb5e !important;
 }
