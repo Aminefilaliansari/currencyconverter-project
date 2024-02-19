@@ -45,10 +45,10 @@ const data = [
   },
 ];
 
-export default function DemoChart({ color }) {
+export default function DemoChart({ color , id ='1'}) {
   return (
     <div className="DemoChart">
-      <LineChart width={100} height={50} data={data}>
+      <LineChart width={100} height={50} data={data} id={id}>
         <Line
           type="monotone"
           dot={false}
