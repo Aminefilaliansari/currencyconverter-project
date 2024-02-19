@@ -45,7 +45,7 @@ const data = [
   },
 ];
 
-export default function DemoChart({ color , id ='1'}) {
+export default function DemoChart({ color, id = "1" }) {
   return (
     <div className="DemoChart">
       <LineChart width={100} height={50} data={data} id={id}>
