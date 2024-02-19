@@ -5,11 +5,7 @@ import DemoChart from "./demochart";
 
 const columns = [
   {
-    title: (
-      <>
-        Inverser : <Switch />
-      </>
-    ),
+    title: "",
     dataIndex: "I",
   },
   {
