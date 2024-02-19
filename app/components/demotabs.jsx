@@ -1,5 +1,6 @@
 import { Tabs, Skeleton } from "antd";
 import TabConvertir from "./elements/tabconvertir";
+import TabGraphic from "./elements/tabgraphic";
 import {
   DollarOutlined,
   LineChartOutlined,
@@ -33,7 +34,15 @@ const items = [
     key: "3",
     label: "Graphique",
     icon: <LineChartOutlined />,
-    children: "Tab Graphique",
+    children: (
+      <motion.div
+        initial={{ opacity: 0, height: 100 }}
+        whileInView={{ opacity: 1, height: "auto" }}
+        transition={{ duration: 0.7 }}
+      >
+        <TabGraphic />
+      </motion.div>
+    ),
   },
   {
     key: "4",
@@ -52,7 +61,7 @@ export default function DemoTabs() {
         items={items}
         type="card"
         size="middle"
-        className="bg-white rounded-md drop-shadow-md "
+        className="bg-white rounded-md drop-shadow-md"
       />
     </>
   );
