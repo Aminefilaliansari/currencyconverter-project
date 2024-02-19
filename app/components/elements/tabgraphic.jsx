@@ -1,5 +1,6 @@
 import { Space, Select, Button } from "antd";
 import { SwapOutlined, InfoCircleOutlined } from "@ant-design/icons";
+import GraphicDemo from "../graphicdemo";
 
 export default function TabGraphic() {
   return (
@@ -80,6 +81,8 @@ export default function TabGraphic() {
           Afficher le graphique
         </Button>
       </div>
+
+      <GraphicDemo/>
     </div>
   );
 }
