@@ -1,8 +1,7 @@
 import { SendOutlined, CaretDownFilled } from "@ant-design/icons";
 import { Table, Button, Switch } from "antd";
 import { useState } from "react";
-import dynamic from "next/dynamic";
-const DemoChart = dynamic(() => import("./DemoChart"), { ssr: false });
+import DemoChart from "./demochart";
 
 const columns = [
   {
@@ -20,10 +19,9 @@ const columns = [
       if (index === 0) {
         return (
           <>
-            {" "}
             {text}
             <div className="relative">
-              <CaretDownFilled className=" text-purple-500 -bottom-8 text-2xl absolute" />{" "}
+              <CaretDownFilled className="text-purple-500 -bottom-8 text-2xl absolute" />
             </div>
           </>
         );
@@ -49,7 +47,7 @@ const columns = [
       if (index === 0) {
         return null;
       }
-      return <DemoChart color={record.color} id={record.key} />;
+      return text;
     },
   },
   {
