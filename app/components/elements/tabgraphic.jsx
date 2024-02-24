@@ -1,8 +1,15 @@
 import { Space, Select, Button } from "antd";
 import { SwapOutlined, InfoCircleOutlined } from "@ant-design/icons";
 import GraphicDemo from "../graphicdemo";
+import { useState } from "react";
 
 export default function TabGraphic() {
+  const [onShowGraphic, setShowGraphic] = useState();
+  function handleClickShowGraphique() {
+    setShowGraphic(true);
+    console.log("Click ShowGraphic");
+  }
+
   return (
     <div id="TabGraphic" className="p-7">
       <div className="flex justify-between gap-4">
@@ -69,20 +76,20 @@ export default function TabGraphic() {
 
       <div className="flex justify-between items-center mt-8">
         <p className="text-slate-500">
-          Nous utilisons les taux du marché moyen 
+          Nous utilisons les taux du marché moyen
           <InfoCircleOutlined className="mx-2" />
         </p>
         <Button
           className="h-12 bg-blue-600 px-6 font-semibold"
           type="primary"
           size="large"
-          onClick={""}
+          onClick={handleClickShowGraphique}
         >
           Afficher le graphique
         </Button>
       </div>
 
-      <GraphicDemo/>
+      {onShowGraphic && <GraphicDemo />}
     </div>
   );
 }
