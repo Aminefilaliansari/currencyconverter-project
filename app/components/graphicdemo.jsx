@@ -65,7 +65,6 @@ const data = [
 export default function GraphicDemo() {
   return (
     <div id="GraphicDemo" className="w-full py-8">
-      graphicdemo
       <ResponsiveContainer height={400} className="text-xs">
         <LineChart data={data}>
           <Line
